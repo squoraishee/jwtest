@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         webView.getSettings().setBuiltInZoomControls(true);
 
         webView.loadData(jwplayer,  "text/html; charset=UTF-8", null);
+
+        //UNCOMMENT TO RUN NATIVE PLAYER
         //loadNativePlayer();
 
     }
@@ -54,17 +56,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        //UNCOMMENT TO RUN NATIVE PLAYER
         //playerView.onResume();
     }
 
     @Override
     protected void onPause() {
+        //UNCOMMENT TO RUN NATIVE PLAYER
         //playerView.onPause();
         super.onPause();
     }
 
     @Override
     protected void onDestroy() {
+        //UNCOMMENT TO RUN NATIVE PLAYER
         //playerView.onDestroy();
         super.onDestroy();
     }
