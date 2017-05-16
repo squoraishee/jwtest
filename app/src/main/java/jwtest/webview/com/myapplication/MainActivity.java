@@ -34,30 +34,8 @@ public class MainActivity extends AppCompatActivity {
         webView.getSettings().setBuiltInZoomControls(true);
 
         webView.loadData(jwplayer,  "text/html; charset=UTF-8", null);
-//        loadNativePlayer();
+        //loadNativePlayer();
 
-
-//        webView.setOnScrollChangedCallback(new ObservableWebView.OnScrollChangedCallback() {
-//                @Override
-//                public void onScroll(int l, int t) {
-//                    toast("Scroll callback");
-//                }
-//            });
-//
-//            String script
-//                    = "function f(){ var r = document.getElementById('%@').getBoundingClientRect(); " +
-//                    "return '{{'+r.left+','+r.top+'},{'+r.width+','+r.height+'}}'; } f();";
-//
-//            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-//                webView.evaluateJavascript(script, new ValueCallback<String>() {
-//                    @Override
-//                    public void onReceiveValue(String value) {
-//                        toast("Result: " + value);
-//                    }
-//                });
-//            }
-
-        //webView.loadData(youtube,  "text/html; charset=UTF-8", null);
     }
 
     public void loadNativePlayer() {

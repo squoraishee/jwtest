@@ -7,7 +7,7 @@ import android.webkit.WebView;
 /**
  * Created by squoraishee on 5/9/17.
  */
-
+/* This can be ignored.  Mostly for testing different custom webview features*/
 public class ObservableWebView extends WebView
 {
     private OnScrollChangedCallback mOnScrollChangedCallback;
