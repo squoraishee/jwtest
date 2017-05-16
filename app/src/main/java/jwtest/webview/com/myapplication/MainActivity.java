@@ -39,8 +39,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loadNativePlayer() {
-        playerView.setVisibility(View.VISIBLE);
+
         playerView = (JWPlayerView) findViewById(R.id.playerView);
+        playerView.setVisibility(View.VISIBLE);
         PlaylistItem pi = new PlaylistItem.Builder()
                         .file("https://content.jwplatform.com/manifests/gFGOwEll.m3u8")
                         .title("BipBop")
